@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="mainCtrl" class="container" style="padding-top:30px">
+    <h1>User List</h1>
+    
+    <div class="row">
+      <div class="col-xs-4">
+        <master-users data="users"></master-users>
+        
+      </div>
+      <div class="col-xs-8">
+        <detail-users data="users"></detail-users>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="app.js"></script>

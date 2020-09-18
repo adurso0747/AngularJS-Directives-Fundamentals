@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/@fortawesome/fontawesome-free/css/all.css">
+	</head>
+	<body ng-controller="mainCtrl" style="background-color: #222222; color: white">
+		<h1>Hello World!</h1>
+		<display-box>
+			<div ng-controller="innerCtrl">
+				<div>Hello from index.html</div>
+				<ul>
+					<li>Item 1</li>
+					<li>Item 2</li>
+				</ul>
+				<div>{{message}}</div>
+			</div>
+		</display-box>
+	</body>
+</html>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="app.js"></script>

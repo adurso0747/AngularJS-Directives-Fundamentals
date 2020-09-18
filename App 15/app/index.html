@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link href="css/all.css" rel="stylesheet">
+  </head>
+
+  <body ng-controller="mainCtrl" class="container">
+    <div ng-repeat="person in people">
+      <person-info-card person="person"></person-info-card> <br/>
+    </div>
+    <div ng-repeat="droid in droids">
+      <droid-info-card droid="droid"></droid-info-card> <br/>
+    </div>
+
+  </body>
+
+</html>
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+<script src="lib/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+<script src="app.js"></script>
+<script src="personData.js"></script>
+<script src="droidData.js"></script>

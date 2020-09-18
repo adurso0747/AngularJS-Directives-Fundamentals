@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body ng-controller="mainCtrl" style="background-color: #222222; color: white">
+		<h1>Hello World!</h1>
+		<div>
+			<div  my-lazy-render="showit" echo ng-repeat="item in items">
+				{{items}}
+			</div>
+		</div>
+		<button class="btn btn-primary" ng-click="showit = true">Render Content</button>
+	</body>
+</html>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="app.js"></script>

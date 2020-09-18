@@ -1,0 +1,8 @@
+<div class="card border" style="border-color: grey">
+    <div class="card-header border" ng-click="collapse()" style="border-color: grey; background-color: dimgrey">
+        <span state-display="level green blue purple grey">{{name}}</span>
+        <button ng-click="nextState($event)" class="btn btn-info" style="float:right">Next State</button>
+    </div>
+    <div class="card-body border" style="border-color: grey" ng-hide="collapsed" ng-transclude>
+    </div>
+</div>

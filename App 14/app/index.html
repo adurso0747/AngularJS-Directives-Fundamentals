@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body ng-controller="mainCtrl">
+		<h1>Modal Sample</h1>
+		<a ng-click="openModal()">Click Here</a>
+		<modal open="modalOpen" options="{top: 35, height:300}" on-close="modalClosed(response)">
+			<div class="card" ng-controller="modalCtrl" style="background-color: grey">
+				<div class="card-header">Are you sure?</div>
+				<div class="card-body">
+					<div class="btn btn-success" ng-click="close('yes')">Yes</div>
+					<div class="btn btn-success" ng-click="close('no')">No</div>
+				</div>
+			</div>
+		</modal>
+	</body>
+</html>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="app.js"></script>

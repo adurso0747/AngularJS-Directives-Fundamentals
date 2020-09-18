@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/app.css">
+	</head>
+	<body ng-controller="mainCtrl" class="container">
+		<h1 class="card" style="background-color: grey">Bounty Hunters</h1>
+		<div user-list="hunter in bountyHunters">
+			<span>Age: {{hunter.age}}</span>
+		</div>
+		<hr>
+		<button class="btn btn-primary" ng-click="add()">Add</button>
+		<button class="btn btn-primary" ng-click="remove()">Remove</button>
+	</body>
+</html>
+
+<script src="lib/jquery.js"></script>
+<script src="lib/bootstrap.js"></script>
+<script src="lib/angular/angular.js"></script>
+<script src="app.js"></script>

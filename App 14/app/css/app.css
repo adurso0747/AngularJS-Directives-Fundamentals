@@ -1,0 +1,84 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li + li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.btn{
+  border-color: white;
+  background-color: #222222;
+  color: white;
+}
+
+.btn:visited {
+  background-color: dimgrey;
+  border-color: ghostwhite;
+}
+
+.btn:focus {
+  background-color: dimgrey;
+  border-color: ghostwhite;
+}
+
+.btn:hover {
+  background-color: dimgrey;
+  border-color: ghostwhite;
+}
+
+.btn:active {
+  background-color: dimgrey;
+  border-color: ghostwhite;
+}
+
+body{
+  background-color: #222222;
+  color: white;
+}
+
+.modal-blackout{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 10;
+}
+
+.modal-container{
+  padding: 20px;
+  position: absolute;
+  box-shadow: 0px 2px 7px #292929;
+  border-radius: 10px;
+  background-color: dimgrey;
+  border: 1px solid;
+  z-index: 50;
+}
+
+.modal-close{
+  position: relative;
+  top:-18px;
+  left:50px;
+  float:right;
+  display:block;
+  height:50px;
+  width:50px;
+}

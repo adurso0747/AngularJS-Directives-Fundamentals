@@ -1,0 +1,59 @@
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+  display: none !important;
+}
+
+body{
+  background-color: #222222;
+}
+.card{
+  background-color: #222222;
+  color: white;
+  border: white;
+}
+
+.btn{
+  background-color: #222222;
+  border-color: white;
+  color: white;
+}
+
+.grey{
+  color: gray; !important;
+}
+
+.blue{
+  color: blue; !important;
+}
+
+.green{
+  color: green; !important;
+}
+
+.purple{
+  color: purple; !important;
+}
+
+.modal-content{
+  background-color: dimgrey;
+  color: white;
+}
+
+.fade.in {
+  opacity: 1;
+}
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.modal-backdrop.in {
+  filter: alpha(opacity=50);
+  opacity: .5;
+}

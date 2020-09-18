@@ -1,0 +1,16 @@
+<user-panel name="{{vm.person.name}}" collapsed="{{initialCollapsed}}" level="vm.person.level">
+    <address></address>
+    <br/>
+
+    <h4>Friends:</h4>
+    <ul>
+        <li ng-repeat='friend in vm.person.friends'>
+            {{friend}}
+            <remove-friend method="vm.removeFriend(friend)"></remove-friend>
+        </li>
+    </ul>
+    <div ng-show="!!vm.person.rank">
+        Rank : {{vm.person.rank}}
+    </div>
+    <button ng-show="!vm.person.rank" class="btn btn-success" ng-click="vm.knightMe()">Knight Me</button>
+</user-panel>
